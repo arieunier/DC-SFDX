@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>createdbyid__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>createdbyid</description>
+    <externalDeveloperName>createdbyid</externalDeveloperName>
+    <externalId>false</externalId>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>createdbyid</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>public_remotecompute</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Remote Compute Job Monitoring</label>
+    <navType>Standard</navType>
+    <tabs>Initiate_a_remote_compute_job</tabs>
+    <tabs>public_serviceattribute__x</tabs>
+    <tabs>public_servicedefinition__x</tabs>
+    <tabs>public_remotecompute__x</tabs>
+    <tabs>public_remotecomputestep__x</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Remote_Compute_Job_Monitoring_UtilityBar</utilityBar>
+</CustomApplication>

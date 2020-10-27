@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>refservicedefinitionid__c</fullName>
+    <description>refservicedefinitionid</description>
+    <externalDeveloperName>refservicedefinitionid</externalDeveloperName>
+    <externalId>false</externalId>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>refservicedefinitionid</label>
+    <length>255</length>
+    <referenceTo>public_servicedefinition__x</referenceTo>
+    <relationshipLabel>public$serviceattribute</relationshipLabel>
+    <relationshipName>public_serviceattribute</relationshipName>
+    <type>ExternalLookup</type>
+</CustomField>

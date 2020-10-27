@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>refjobid__c</fullName>
+    <description>refjobid</description>
+    <externalDeveloperName>refjobid</externalDeveloperName>
+    <externalId>false</externalId>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>refjobid</label>
+    <length>255</length>
+    <referenceTo>public_remotecompute__x</referenceTo>
+    <relationshipLabel>public$remotecomputestep</relationshipLabel>
+    <relationshipName>public_remotecomputestep</relationshipName>
+    <type>ExternalLookup</type>
+</CustomField>

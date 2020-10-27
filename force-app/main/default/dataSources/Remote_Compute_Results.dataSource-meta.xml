@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalDataSource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customConfiguration>{&quot;inlineCountEnabled&quot;:&quot;true&quot;,&quot;requestCompression&quot;:&quot;false&quot;,&quot;pagination&quot;:&quot;CLIENT&quot;,&quot;noIdMapping&quot;:&quot;false&quot;,&quot;format&quot;:&quot;JSON&quot;,&quot;compatibility&quot;:&quot;DEFAULT&quot;,&quot;timeout&quot;:&quot;120&quot;,&quot;searchEnabled&quot;:&quot;true&quot;,&quot;ChangeTrackingEnabled&quot;:&quot;false&quot;}</customConfiguration>
+    <endpoint>https://odata-eu.heroku.com/odata/v4/7ea4f0e9e043467ea0c831998efd9376/</endpoint>
+    <isWritable>false</isWritable>
+    <label>Remote Compute Results</label>
+    <principalType>NamedUser</principalType>
+    <protocol>Password</protocol>
+    <type>OData4</type>
+    <username>3ba01891e0dd49e78832ac4b35a6a25d</username>
+</ExternalDataSource>

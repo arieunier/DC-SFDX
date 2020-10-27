@@ -1,0 +1,36 @@
+<template>
+    <lightning-card
+        title="Fill Service Attributes"
+        icon-name="custom:custom63"
+    >
+        <div class="slds-var-m-around_medium">
+            <template if:true={serviceAttributes.data}>
+                <template for:each={serviceAttributes.data} for:item="serviceAttribute">
+                    <p key={serviceAttribute.Id}  description={serviceAttribute.attributedescription__c}>{serviceAttribute.attributedescription__c}</p> 
+                    <lightning-input 
+                        class='inp'
+                        key={serviceAttribute.Id} 
+                        name={serviceAttribute.attributename__c}>
+                    </lightning-input>                   
+                </template> 
+                <div class="slds-var-m-top_x-small">
+                    <lightning-button
+                        label="Generate Service Attribute"
+                        variant="brand"
+                        onclick={generateServiceAttribute}
+                    ></lightning-button>
+                </div>               
+            </template>
+            <template if:true={serviceAttributes.error}>
+                <p errors={serviceAttributes.error}></p>
+            </template>
+            <br></br>
+            <lightning-input
+                label="Generated Service Attributes"
+                disabled
+                value={AttributeContent}
+            ></lightning-input>
+            <lightning-button label="Navigate to Next Step" variant="brand" onclick={handleNext} ></lightning-button> 
+        </div>
+    </lightning-card>
+</template>

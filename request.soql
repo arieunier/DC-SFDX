@@ -1,0 +1,1 @@
+select id__c, attributedescription__c, attributelabel__c,attributename__c from  public_serviceattribute__x where refservicedefinitionid__c = :id
