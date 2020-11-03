@@ -16,6 +16,23 @@
             <targetReference>ConfirmationScreen</targetReference>
         </connector>
     </assignments>
+    <assignments>
+        <description>use recordId value to pass variable in context record id. use this workaround for quick action flows</description>
+        <name>setContextRecordId</name>
+        <label>setContextRecordId</label>
+        <locationX>282</locationX>
+        <locationY>286</locationY>
+        <assignmentItems>
+            <assignToReference>ContextRecordId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Opportunity_Copy_Configuration</targetReference>
+        </connector>
+    </assignments>
     <description>Allows an end user to mass copy opportunities from one of his account.</description>
     <formulas>
         <name>GenerateAttributeStructure</name>
@@ -174,6 +191,11 @@
             <fieldType>InputField</fieldType>
             <isRequired>true</isRequired>
         </fields>
+        <fields>
+            <name>ContextRecordIdText</name>
+            <fieldText>&lt;p&gt;&lt;b&gt;Account Record Id :&lt;/b&gt; {!ContextRecordId}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
@@ -197,10 +219,10 @@
         <locationX>650</locationX>
         <locationY>48</locationY>
         <connector>
-            <targetReference>Opportunity_Copy_Configuration</targetReference>
+            <targetReference>setContextRecordId</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>ComputeAttributes</name>
         <dataType>String</dataType>
@@ -225,15 +247,18 @@
         <name>ContextObjectName</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>true</isOutput>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Account</stringValue>
+        </value>
     </variables>
     <variables>
         <name>ContextRecordId</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>true</isOutput>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
         <value>
             <elementReference>$Flow.CurrentRecord</elementReference>
         </value>
@@ -276,6 +301,16 @@
         <isOutput>true</isOutput>
         <value>
             <stringValue>Closed Won</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>$Flow.CurrentRecord</elementReference>
         </value>
     </variables>
 </Flow>
