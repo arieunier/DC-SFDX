@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPage>Call_To_Remote_Service</flexiPage>
+    <label>Call To a Remote Service</label>
+    <motif>Custom88: Sailboat</motif>
+</CustomTab>

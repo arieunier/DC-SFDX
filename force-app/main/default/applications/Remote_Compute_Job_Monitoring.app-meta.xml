@@ -10,11 +10,11 @@
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>Remote Compute Job Monitoring</label>
     <navType>Standard</navType>
-    <tabs>Initiate_a_remote_compute_job</tabs>
-    <tabs>public_serviceattribute__x</tabs>
-    <tabs>public_servicedefinition__x</tabs>
+    <tabs>Call_To_a_Remote_Service</tabs>
     <tabs>public_remotecompute__x</tabs>
     <tabs>public_remotecomputestep__x</tabs>
+    <tabs>public_serviceattribute__x</tabs>
+    <tabs>public_servicedefinition__x</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Remote_Compute_Job_Monitoring_UtilityBar</utilityBar>
 </CustomApplication>

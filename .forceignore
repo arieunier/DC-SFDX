@@ -12,3 +12,4 @@ package.xml
 **/__tests__/**
 
 *.profile-meta.xml
+*AppSwitcher.appMenu*
