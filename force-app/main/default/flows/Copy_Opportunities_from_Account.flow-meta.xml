@@ -132,11 +132,6 @@
             <targetReference>GenerateAttributes</targetReference>
         </connector>
         <fields>
-            <name>OriginFiscalYearText</name>
-            <fieldText>&lt;p&gt;Optional - please enter using 4 digit the fiscal year to copy the data from. If empty, will copy from all past years.&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-        </fields>
-        <fields>
             <name>OriginFiscalYearStt</name>
             <dataType>String</dataType>
             <defaultValue>
@@ -147,8 +142,8 @@
             <isRequired>true</isRequired>
         </fields>
         <fields>
-            <name>DestinationFiscalYearText</name>
-            <fieldText>&lt;p&gt;Optional - enter the destination fiscal year using 4 digits. If not given, will use next fiscal year.&lt;/p&gt;</fieldText>
+            <name>OriginFiscalYearText</name>
+            <fieldText>&lt;p&gt;Optional - please enter using 4 digit the fiscal year to copy the data from. If empty, will copy from all past years.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
@@ -162,8 +157,8 @@
             <isRequired>true</isRequired>
         </fields>
         <fields>
-            <name>OriginStageNameText</name>
-            <fieldText>&lt;p&gt;Optional - please enter the stage name of the opportunities to copy&lt;/p&gt;</fieldText>
+            <name>DestinationFiscalYearText</name>
+            <fieldText>&lt;p&gt;Optional - enter the destination fiscal year using 4 digits. If not given, will use next fiscal year.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
@@ -177,8 +172,8 @@
             <isRequired>true</isRequired>
         </fields>
         <fields>
-            <name>DestinationStageNameText</name>
-            <fieldText>&lt;p&gt;Optional - select the stage name to create the new opportunities with. Otherwise will use default first stage&lt;/p&gt;</fieldText>
+            <name>OriginStageNameText</name>
+            <fieldText>&lt;p&gt;Optional - please enter the stage name of the opportunities to copy.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
@@ -190,6 +185,11 @@
             <fieldText>Destination Stage Name</fieldText>
             <fieldType>InputField</fieldType>
             <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>DestinationStageNameText</name>
+            <fieldText>&lt;p&gt;Optional - select the stage name to create the new opportunities with. Otherwise will use default first stage.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
             <name>ContextRecordIdText</name>
