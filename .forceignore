@@ -13,3 +13,4 @@ package.xml
 
 *.profile-meta.xml
 *AppSwitcher.appMenu*
+*Address.settings*
