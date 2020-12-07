@@ -7,10 +7,10 @@
     <isFilteringDisabled>false</isFilteringDisabled>
     <isNameField>false</isNameField>
     <isSortingDisabled>false</isSortingDisabled>
-    <label>refjobid</label>
+    <label>Remote Compute Job Id</label>
     <length>255</length>
     <referenceTo>public_remotecompute__x</referenceTo>
-    <relationshipLabel>public$remotecomputestep</relationshipLabel>
+    <relationshipLabel>Remonte Compute Steps</relationshipLabel>
     <relationshipName>public_remotecomputestep</relationshipName>
     <type>ExternalLookup</type>
 </CustomField>

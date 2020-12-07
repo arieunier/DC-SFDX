@@ -7,10 +7,10 @@
     <isFilteringDisabled>false</isFilteringDisabled>
     <isNameField>false</isNameField>
     <isSortingDisabled>false</isSortingDisabled>
-    <label>refservicedefinitionid</label>
+    <label>Remote Service Definition Id</label>
     <length>255</length>
     <referenceTo>public_servicedefinition__x</referenceTo>
-    <relationshipLabel>public$serviceattribute</relationshipLabel>
+    <relationshipLabel>Related Remote Service Attributes</relationshipLabel>
     <relationshipName>public_serviceattribute</relationshipName>
     <type>ExternalLookup</type>
 </CustomField>
